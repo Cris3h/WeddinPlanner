@@ -1,0 +1,20 @@
+.backgroundImg{
+    background-image: url('../images/landingIMG.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.opacity{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color:  rgba(0, 0, 0, 0.5);;
+}
+
+ .contentContainer{
+    background-color:  rgba(247, 229, 229, 0.797)
+ } 
