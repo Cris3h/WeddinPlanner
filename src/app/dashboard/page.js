@@ -1,11 +1,14 @@
-import React from 'react'
+import Dashboard from "@/components/Dashboard";
+import Footer from "@/components/Footer";
+import React from "react";
 
 function page() {
   return (
     <div>
-      <h1> acá es el Dashboard</h1>
+      <Dashboard />
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default page
+export default page;

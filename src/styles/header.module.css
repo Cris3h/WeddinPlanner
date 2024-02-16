@@ -1,0 +1,64 @@
+.navContainer{
+    display: flex;
+    border-bottom: 2px solid rgba(110, 110, 110, 0.571);
+    border-radius: 16px;
+    box-shadow: 0px 1px 0px  rgba(110, 110, 110, 0.571);
+}
+
+.userWelcoming{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+
+
+}
+
+
+.userWelcoming img{
+    grid-column: 2/3;
+    justify-self: center;
+    align-self: center;
+    width: 250px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.userWelcoming div{
+    display: flex;
+    /* gap: 2rem; */
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.userWelcoming p{
+    grid-column: 3/4;
+    color: rgb(100, 99, 99);
+
+}
+.userWelcoming svg{
+    grid-column: 3/4;
+    margin: 0 45px 0px 25px;
+
+}
+
+/* .userWelcoming{
+    justify-content: end;
+    align-items: center;
+}
+
+.userWelcoming p{
+    color: rgb(100, 99, 99);
+}
+
+.logoBrandContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logoBrandContainer img{
+    width: 250px;
+    height: auto;
+    align-self: center;
+    justify-self: center;
+} */

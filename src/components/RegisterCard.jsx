@@ -12,34 +12,16 @@ import Box from "@mui/material/Box";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
+import Copyright from '@/components/Copyright'
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
-function Copyright(props) {
-  return (
-    <Typography
-      variant="body2"
-      color="text.secondary"
-      align="center"
-      {...props}
-    >
-      {"Copyright © "}
-      <Link
-        color="inherit"
-        href="https://cris3h.github.io/portfolio-cv/portfolio/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Your Website
-      </Link>{" "}
-      {new Date().getFullYear()}
-      {"."}
-    </Typography>
-  );
-}
 
 const theme = createTheme();
 
 export default function SignUp() {
+
+
+  
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -79,7 +61,7 @@ export default function SignUp() {
                   autoComplete="given-name"
                   name="firstName"
                   required
-                  fullWidth
+                  fullwidth='true'
                   id="firstName"
                   label="First Name"
                   autoFocus
@@ -88,7 +70,7 @@ export default function SignUp() {
               <Grid item xs={12} sm={6}>
                 <TextField
                   required
-                  fullWidth
+                  fullwidth='true'
                   id="lastName"
                   label="Last Name"
                   name="lastName"
@@ -98,7 +80,7 @@ export default function SignUp() {
               <Grid item xs={12}>
                 <TextField
                   required
-                  fullWidth
+                  fullwidth='true'
                   id="email"
                   label="Email Address"
                   name="email"
@@ -108,7 +90,7 @@ export default function SignUp() {
               <Grid item xs={12}>
                 <TextField
                   required
-                  fullWidth
+                  fullwidth='true'
                   name="password"
                   label="Password"
                   type="password"
@@ -127,7 +109,7 @@ export default function SignUp() {
             </Grid>
             <Button
               type="submit"
-              fullWidth
+              fullwidth='true'
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
             >
